@@ -4,47 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Linh Nguyen</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Nguyễn Trần Ánh Linh</title>
 </head>
-<body bgcolor="pink">
+<body>
 
-    
-    <div class="header" >
-        <img src="./assets/img/avt.jpg"  alt="Hình lỗi">
+    <div class="header">
+        <a href="#about-section">Về tôi</a>
+        <a href="./pictures.html">Ảnh tôi chụp</a>
     </div>
-    <div class="content">
-        <div class="mess"> 
-            <p>Bình luận</p>
-            <textarea class="message" placeholder="Hãy viết gì đó !" name="" id="" cols="20" rows="1"></textarea>
+
+    <div id="about-section">
+        <div class="img-container" >
+            <img src="./assets/img/avt.jpg"  alt="Hình lỗi">
         </div>
-        <select name="" id="slcmess">
-            <option value="Thật tuyệt vời">😊Thật tuyệt vời</option>
-            <option value="#cheeee">#cheeee 🤡</option>
-        </select>
-        <h1>Giới thiệu bản thân </h1>
-        <h2 style="font-style: italic;">Họ và tên:Nguyễn Trần Ánh Linh</h2>
-        
-        
-        <ul class="lst">
-            
-            <li><a href="https://www.facebook.com/profile.php?id=100032014386263"> Facebook</a></li>
-            <li>Sở thích: Có niềm đam mê với âm nhạc,yêu thích động vật</li>
-            <li>Nghề nghiệp:Giáo viên</li>
-            <li><a href="https://www.youtube.com/watch?v=YHi1NDCMQ5s"> Bài hát yêu thích</a></li>
-            <li>Contact work:linhnguyen.260603@gmail.com</li>
-                
-                <ul class="lst">
-                    <li >Châm ngôn sống:</li>
-                    <li>Sống vô tư cho đời ta vô thường.</li>
-                    <li>Yêu bản thân trước đi sẽ có người yêu mình hơn.</li>
-                </ul>
-    
+        <ul class="about-me">
+            <li>
+                <h1 style="margin: 8px 0px; font-size: 24px;">Giới thiệu bản thân</h1>
+            </li>
+            <li>
+                Họ và tên:
+                <a style="margin-left: 4px;" href="https://www.facebook.com/profile.php?id=100032014386263">
+                    Nguyễn Trần Ánh Linh
+                </a>
+            </li>
+            <li>Theo học tại: Đại Học Sư Phạm Thành phố Hồ Chí Minh</li>
+            <li>Contact work: linhnguyen.260603@gmail.com</li>
+            <li>Job: Teacher in Rensei Education Center</li>
+            <li>Động vật yêu thích: chó mèo</li>
+            <h1 style="margin: 16px 0px 8px; font-size: 20px;">Châm ngôn sống:</h1>
+            <li>- Sống vô tư cho đời ta vô thường.</li>
+            <li>- Yêu bản thân trước đi sẽ có người yêu mình hơn.</li>
         </ul>
     </div>
-    <div style="display: flex; justify-content: center;"><h3 >Hãy giới thiệu một chút về bản thân của bạn !</h3></div>
+
     <div class="about_you">     
+
+        <h3 >Hãy giới thiệu một chút về bản thân của bạn !</h3>
+        <label>
+            Bạn đang cảm thấy:
+            <select name="" id="feeling">
+                <option value="perfect">😊Thật tuyệt vời</option>
+                <option value="good">Rất là tốt</option>
+                <option value="happy">Hạnh phúc quá</option>
+                <option value="bad">Khá là tệ</option>
+                <option value="empty">Trống rỗng</option>
+            </select>
+        </label>
         <table>
             <!-- <tr><td><h3>Hãy giới thiệu một chút về bản thân của bạn !</h3></td></tr> -->
             <thead>
@@ -55,10 +62,8 @@
             </thead>
             <tbody>
                 <tr>
-                    
-                        <td>Họ và tên</td>
-                        <td><input type="text" placeholder="họ tên của bạn"></td>
-                    
+                    <td>Họ và tên</td>
+                    <td class="no-padding"><input style="height: 40px" type="text" placeholder="Họ tên của bạn"></td>
                 </tr>
                 <tr>
                     <td>Giới tính</td>
@@ -71,49 +76,15 @@
                 </tr>
                 <tr>
                     <td>Ưu điểm</td>
-                    <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+                    <td class="no-padding"><textarea name="" id="" cols="36" rows="5"></textarea></td>
                 </tr>
                 <tr>
                     <td>Nhược điểm</td>
-                    <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+                    <td class="no-padding"><textarea name="" id="" cols="30" rows="5"></textarea></td>
                 </tr>
             </tbody>
         </table>
     </div>
-  <br>
-  
-  <!-- The dots/circles -->
-<div class="slideshow-container">
 
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="assets/img/ảnh 1.jpg" style="width:100%">
-      <div class="text">Hình 1</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="assets/img/ảnh 2.jpg" style="width:100%">
-      <div class="text">Hình 2</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="assets/img/ảnh 3.jpg" style="width:100%">
-      <div class="text">Hình 3</div>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <a class="dot" onclick="currentSlide(1)"></a> 
-      <a class="dot" onclick="currentSlide(2)"></a> 
-      <a class="dot" onclick="currentSlide(3)"></a> 
-    </div>
-    
 </body>
 </html>

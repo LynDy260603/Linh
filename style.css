@@ -4,18 +4,69 @@
     box-sizing: border-box;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #839196;
+    padding: 32px 64px;
+}
+
+option,
+input,
+select {
+    color: #000;
 }
 
 .header {
+    /* background-color: rgb(54, 54, 116); */
+    height: 80px;
+    padding: 0;
+    text-align: center;
+}
+
+.header > a {
+    height: 100%;
+    padding: 12px;
+    font-size: 32px;
+    line-height: 80px;
+    margin: 0px 24px;
+    text-decoration: none;
+    border: solid 2px #fff;
+    transition: 300ms ease-in-out;
+    border-radius: 8px;
+}
+
+.header > a:hover {
+    background-color: #fff;
+    color: #839196;
+}
+
+#about-section {
+    padding: 12px 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-container {
     /* display: inline-block; */
-    margin: 0px auto;
-    width: 200px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
+    margin: auto;
     overflow: hidden;
 }
 
-.header > img{
+.img-container > img{
     width: 100%;
+}
+
+.about-me {
+    list-style: none;
+}
+
+.about-me li {
+    margin: 8px 12px;
 }
 
 .content {
@@ -25,23 +76,31 @@
     align-items: center;
 }
 
-.lst {
-    list-style: none;
-}
-
-.mess {
-    display: flex;
-    align-items: center;
-}
-
-.messages {
-    padding: 10px;
-}
-
 .about_you {
+    margin: auto;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
+    width: 40%;
+}
+
+.about_you h3 {
+    text-align: center;
+}
+.about_you label {
+    margin: 24px 16px 0px;
+}
+
+table {
+    margin-top: 12px;
+}
+
+table td {
+    padding: 12px;
+}
+
+td.no-padding {
+    padding: 0;
 }
 
 table tr td {
